@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aşkım için ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- PAGE 1: SECRET CODE -->
+    <div id="page1" class="page active">
+        <h1>Guess the password sevgilim!! 💌</h1>
+        <input type="password" id="codeInput" placeholder="Secret code">
+        <button onclick="checkCode()">Unlock</button>
+
+        <div id="letterIcon" class="hidden letter">
+            <img src="images/letter.png" alt="Love Letter">
+            <p>Click the letter</p>
+        </div>
+    </div>
+
+    <!-- PAGE 1B: LETTER CONTENT -->
+    <div id="letterPage" class="page">
+        <h2>My Love,</h2>
+        <p>
+            <!-- ✨ YOUR GREETING TEXT HERE ✨ -->
+            Merry Christmas. I know you don't celebrate Christmas, yet it is my favourite celebartion of the year (more like Christmas eve hehehe but still).
+            So I just had to gift you something and this idea has been on my mind for months!! I am not good at coding so I had to use AI AAAAAHHHH I am sorry I NEEDED THE HELP (very much).
+            Baby I love making things for you!! You are my motivation, there is nothing I cannot overcome when I think of you even the coding hahahahaha. You bring back the crafty side of me and I just want to give you the world... I cannot do that YET so I hope this will be a good introductory to that heheheheh. 
+            So it is my favourite holiday because it is about family, it has always been. And you are my family. I love you more than anything and everything. Literally. Fully. Trully. You and your family I love like my family... Because they are.
+            It is also the end of the year and I want to thank you for giving me my most beautiful time yet. I cannot wait to spend my whole life with you. Wherever we end up we are together. What a beautiful and blessed life this is. 
+            You gave us our home, I present you a decoration in it, I hope you will enjoy. I love you kocam 💌
+        </p>
+
+        <button onclick="goToPage(2)">Next ➡️</button>
+    </div>
+
+    <!-- PAGE 2: RELATIONSHIP COUNTER -->
+    <div id="page2" class="page">
+        <h2>We have been together for 💖</h2>
+        <p id="counter"></p>
+        <p id="foreverLine">Our hearts will dance together forever aşkım 💖</p>
+
+
+        <button onclick="goToPage(3)">Next ➡️</button>
+    </div>
+
+    <!-- PAGE 3: INTERACTIVE BOXES -->
+    <div id="page3" class="page">
+        <h2>Memory hall 🎁</h2>
+
+        <div class="box-container">
+            <div class="box" onclick="openMusic()">🎵 Music</div>
+            <div class="box" onclick="openScreenshots()">💬 Conversations</div>
+            <div class="box" onclick="openGame()">🎮 Game</div>
+        </div>
+
+        <div class="box christmas" onclick="openChristmasLetter()">
+            🎄 Christmas Greetings
+        </div>
+    </div>
+
+    <!-- PAGE 4:MUSIC PAGE -->
+<div id="musicPage" class="page">
+    <h2>Some (christmasy) music that also reminds me of you 🎶</h2>
+
+    <div class="music-box" onclick="openLink('https://www.youtube.com/watch?v=_SyO4rKr0-w')">
+        <p><strong>California dream</strong></p>
+        <p>Reminds me of what our life in California could be like</p>
+    </div>
+
+    <div class="music-box" onclick="openLink('https://www.youtube.com/watch?v=JDqKksYTtYI')">
+        <p><strong>Gentle love</strong></p>
+        <p>I forgave the world the day that I met you</p>
+    </div>
+
+    <div class="music-box" onclick="openLink('https://www.youtube.com/watch?v=b0LDL-DQfFM')">
+        <p><strong>Be my winter fireplace</strong></p>
+        <p>I want to hold you close to me and collect the kisses that are mine</p>
+    </div>
+
+    <div class="music-box" onclick="openLink('https://www.youtube.com/watch?v=vGJTaP6anOU')">
+        <p><strong>You are my life</strong></p>
+        <p>"Take my whole life, too" – my life belongs to you anyways</p>
+    </div>
+
+    <div class="music-box" onclick="openLink('https://www.youtube.com/watch?v=oK3-bz7KfJM')">
+        <p><strong>Our jazz dinner dream</strong></p>
+        <p>Jazz theme for the jazz dinner we want. And I want you near</p>
+    </div>
+
+    <br>
+    <button onclick="goToPage(3)">⬅ Back</button>
+</div>
+
+<!-- PAGE 5: SCREENSHOTS -->
+<div id="screenshotsPage" class="page">
+    <h2>Our beautiful conversations 💖</h2>
+    <p>Some conversations that did not make it into the pinned-messages room and deserve spotlight ❤️</p>
+
+    <div class="gallery">
+        <div class="preview-card" onclick="openLink('images/screenshots/chat1.jpeg')">
+            <span>Click to open 💬</span>
+        </div>
+        <div class="preview-card" onclick="openLink('images/screenshots/chat2.jpeg')">
+            <span>Click to open 💬</span>
+        </div>
+        <div class="preview-card" onclick="openLink('images/screenshots/chat3.jpeg')">
+            <span>Click to open 💬</span>
+        </div>
+        <div class="preview-card" onclick="openLink('images/screenshots/chat4.jpeg')">
+            <span>Click to open 💬</span>
+        </div>
+        <div class="preview-card" onclick="openLink('images/screenshots/chat5.jpeg')">
+            <span>Click to open 💬</span>
+        </div>
+        <div class="preview-card" onclick="openLink('images/screenshots/chat6.jpeg')">
+            <span>Click to open 💬</span>
+        </div>
+        <div class="preview-card" onclick="openLink('images/screenshots/chat7.jpeg')">
+            <span>Click to open 💬</span>
+        </div>
+        <div class="preview-card" onclick="openLink('images/screenshots/chat8.jpeg')">
+            <span>Click to open 💬</span>
+        </div>
+        <div class="preview-card" onclick="openLink('images/screenshots/chat9.jpeg')">
+            <span>Click to open 💬</span>
+        </div>
+        <div class="preview-card" onclick="openLink('images/screenshots/chat10.jpeg')">
+            <span>Click to open 💬</span>
+        </div>
+        <div class="preview-card" onclick="openLink('images/screenshots/chat11.jpeg')">
+            <span>Click to open 💬</span>
+        </div>
+        <div class="preview-card" onclick="openLink('images/screenshots/chat12.jpeg')">
+            <span>Click to open 💬</span>
+        </div>
+        <div class="preview-card" onclick="openLink('images/screenshots/chat13.jpeg')">
+            <span>Click to open 💬</span>
+        </div>
+        <div class="preview-card" onclick="openLink('images/screenshots/chat14.jpeg')">
+            <span>Click to open 💬</span>
+        </div>
+        <div class="preview-card" onclick="openLink('images/screenshots/chat15.jpeg')">
+            <span>Click to open 💬</span>
+        </div>
+        <div class="preview-card" onclick="openLink('images/screenshots/chat16.jpeg')">
+            <span>Click to open 💬</span>
+        </div>
+        <div class="preview-card" onclick="openLink('images/screenshots/chat17.jpeg')">
+            <span>Click to open 💬</span>
+        </div>
+        <div class="preview-card" onclick="openLink('images/screenshots/chat18.jpeg')">
+            <span>Click to open 💬</span>
+        </div>
+        <div class="preview-card" onclick="openLink('images/screenshots/chat19.jpeg')">
+            <span>Click to open 💬</span>
+        </div>
+        <div class="preview-card" onclick="openLink('images/screenshots/chat20.jpeg')">
+            <span>Click to open 💬</span>
+        </div>
+    </div>
+
+    <br>
+    <button onclick="goToPage(3)">⬅ Back</button>
+</div>
+
+<!-- PAGE 6: GAME -->
+<div id="gamePage" class="page">
+    <h2>Little game (quiz??) of our incredible texts 💖</h2>
+    <p>Try to guess the missing word baby! One try only hehehe.</p>
+
+    <div class="game-container">
+
+        <!-- QUESTION 1 -->
+        <div class="game-card">
+            <p>“E: I am yours baby do you understand? Completely body and soul and _____.”</p>
+            <input type="text" id="answer1">
+            <button onclick="checkAnswer(1, 'mind')">Check</button>
+            <p class="result" id="result1"></p>
+        </div>
+
+        <!-- QUESTION 2 -->
+        <div class="game-card">
+            <p>“A: So you are saying you're not on your _____ Eigintė Kara???”</p>
+            <input type="text" id="answer2">
+            <button onclick="checkAnswer(2, 'period')">Check</button>
+            <p class="result" id="result2"></p>
+        </div>
+
+        <!-- QUESTION 3 -->
+        <div class="game-card">
+            <p>“E: We do deserve each other 🖤 we are each other's _____ 💘”</p>
+            <input type="text" id="answer3">
+            <button onclick="checkAnswer(3, 'fairytale')">Check</button>
+            <p class="result" id="result3"></p>
+        </div>
+
+        <!-- QUESTION 4 -->
+        <div class="game-card">
+            <p>“E: I know you would not have chosen a wooden something something bed when there's perfectly warm naked body of your _____ right next to you.”</p>
+            <input type="text" id="answer4">
+            <button onclick="checkAnswer(4, 'wife')">Check</button>
+            <p class="result" id="result4"></p>
+        </div>
+
+        <!-- QUESTION 5 -->
+        <div class="game-card">
+            <p>“A: But I want to have _____ photos with you together so that I can look at them during longing times.”</p>
+            <input type="text" id="answer5">
+            <button onclick="checkAnswer(5, '837272728')">Check</button>
+            <p class="result" id="result5"></p>
+        </div>
+
+        <!-- QUESTION 6 -->
+        <div class="game-card">
+            <p>“E: Tamam hayır... Tamam _____.”</p>
+            <input type="text" id="answer6">
+            <button onclick="checkAnswer(6, 'yok')">Check</button>
+            <p class="result" id="result6"></p>
+        </div>
+
+        <!-- QUESTION 7 -->
+        <div class="game-card">
+            <p>“E: Evet.... Ben _____ .”</p>
+            <input type="text" id="answer7">
+            <button onclick="checkAnswer(7, 'ağlaying')">Check</button>
+            <p class="result" id="result7"></p>
+        </div>
+
+        <!-- QUESTION 8 -->
+        <div class="game-card">
+            <p>“E: I Eigintė Kara will stay still on her fours with my waist down and will wait for her husband Ayberk Kara to _____ her.”</p>
+            <input type="text" id="answer8">
+            <button onclick="checkAnswer(8, 'penetrate')">Check</button>
+            <p class="result" id="result8"></p>
+        </div>
+
+        <!-- QUESTION 9 -->
+        <div class="game-card">
+            <p>“A: I want to be alone with you at the forest under the _____ and make love to you.”</p>
+            <input type="text" id="answer9">
+            <button onclick="checkAnswer(9, 'moonlight')">Check</button>
+            <p class="result" id="result9"></p>
+        </div>
+
+        <!-- QUESTION 10 -->
+        <div class="game-card">
+            <p>“E: I need your _____. To fall asleep.”</p>
+            <input type="text" id="answer10">
+            <button onclick="checkAnswer(10, 'chest')">Check</button>
+            <p class="result" id="result10"></p>
+        </div>
+
+    </div>
+
+    <br>
+    <button onclick="goToPage(3)">⬅ Back</button>
+</div>
+
+    <!-- PAGE 7: CHRISTMAS LETTER -->
+    <div id="christmasLetter" class="page">
+        <h2>Christmas Letter 🎄❤️</h2>
+        <p>
+            <!-- ✨ YOUR FINAL CHRISTMAS LETTER HERE ✨ -->
+            Could not do without another letter baby... AHHHH HOW TO EXPRESS MY LOVE FOR YOU I WILL CRY AGAIN BECAUSE I HAVE SO MUCH LOVE FOR YOU. 
+            I just want... I want to celebrate Christmas together baby, I want you sitting next to me, I want you to try my aunt's best dumplings with mushrooms that she only makes once a year.
+            I want you to talk with the boys and I want you to help us in the kitchen making food. I want to wake up with everyone, your body next to mine and go wake up the others and say Merry Christmas (Su Kalėdom) and 
+            then complain that the Santa went crazy with the gifts again. I want your laugh to fill the halls of my favourite house on earth (besides our house... present and future).
+            I want you with me in every waking second of the day. I love you so much... So much... My soulmate, my one and only. Every day is a miracle with you. Merry Christmas Ayberkim, you are the best present I could have ever asked for ❤️.
+        </p>
+        <br>
+<button onclick="goToPage(3)">⬅ Back</button>
+
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
